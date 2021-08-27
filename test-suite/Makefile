@@ -3,7 +3,8 @@ FLAGS := -Wall -Wextra -Werror
 
 function_files := \
 					./char/print_char_res.c \
-					./ui/describe.c 
+					./ui/describe.c \
+					./ui/empty_line.c 
 
 function_objects := ${function_files:.c=.o}
 

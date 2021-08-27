@@ -3,5 +3,6 @@
 
 void describe(char *test_name);
 void it(char *test_name);
+void empty_line(void);
 
 #endif
