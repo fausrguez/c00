@@ -9,4 +9,5 @@ int main()
 	ft_print_numbers_test();
     ft_is_negative_test();
 	ft_print_comb_test();
+	ft_print_comb2_test();
 }

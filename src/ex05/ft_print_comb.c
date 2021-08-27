@@ -6,13 +6,13 @@
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/08/27 16:53:54 by farodrig      #+#    #+#                 */
-/*   Updated: 2021/08/27 17:44:46 by farodrig      ########   odam.nl         */
+/*   Updated: 2021/08/27 18:51:37 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	print_comb(char cents, char tens, char units)
+static void	print_comb(char cents, char tens, char units)
 {
 	write(1, &cents, 1);
 	write(1, &tens, 1);
