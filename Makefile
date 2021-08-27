@@ -17,9 +17,9 @@ new_module:
 		exit 1;\
 	fi
 
-	cp ~/templates/c-file.c ./src/$m.c
-	cp ~/templates/c-header.h ./src/$m.h
-	cp ~/templates/c-main.c ./tests/$m.test.c
+	cp ./templates/c-file.c ./src/$m.c
+	cp ./templates/c-header.h ./src/$m.h
+	cp ./templates/c-test.c ./tests/$m.test.c
 
 norminette:
 	~/.local/bin/norminette ./src
@@ -28,5 +28,5 @@ update_structure:
 	git add .
 	git commit -m 'The Time has come'
 	git checkout -b master
-	rm -rf test-suite tests .gitignore Makefile 
+	rm -rf test-suite tests templates .gitignore Makefile 
 	mv src/* . && rm -rf src .gitkeep 
