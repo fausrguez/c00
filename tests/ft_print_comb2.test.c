@@ -7,5 +7,6 @@ int	ft_print_comb2_test()
 	it("Should display all different combinations of two digits \
 between 00 and 99");
 	ft_print_comb2();
+	empty_line();
 	return (0);
 }

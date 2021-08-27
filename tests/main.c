@@ -10,4 +10,5 @@ int main()
     ft_is_negative_test();
 	ft_print_comb_test();
 	ft_print_comb2_test();
+	ft_putnbr_test();
 }

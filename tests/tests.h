@@ -8,5 +8,6 @@ int	ft_print_comb2_test(void);
 int ft_print_numbers_test(void);
 int ft_print_reverse_alphabet_test(void);
 int	ft_putchar_test(void);
+int	ft_putnbr_test(void);
 
 #endif
