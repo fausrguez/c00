@@ -9,7 +9,5 @@ void describe(char *test_name)
 
 void it(char *test_name)
 {
-    printf("%s", blue);
     printf("🢥 %s\n", test_name);
-    printf("%s", nocolor);
 }

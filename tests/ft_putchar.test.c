@@ -1,7 +1,7 @@
 #include "../test-suite/test-suite.h"
 #include "../src/ft_putchar.h"
 
-int	ft_putchar_test()
+int	ft_putchar_test(void)
 {
     describe("ft_putchar");
     it("Should display the character \"c\" when \"c\" is sent");

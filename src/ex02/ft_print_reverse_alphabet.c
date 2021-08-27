@@ -1,18 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_print_alphabet.h                                :+:    :+:            */
+/*   ft_print_reverse_alphabet.c                        :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: farodrig <farodrig@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2021/08/27 12:45:33 by farodrig      #+#    #+#                 */
-/*   Updated: 2021/08/27 15:07:29 by farodrig      ########   odam.nl         */
+/*   Created: 2021/08/27 14:50:44 by farodrig      #+#    #+#                 */
+/*   Updated: 2021/08/27 15:11:08 by farodrig      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINT_ALPHABET_H
-# define FT_PRINT_ALPHABET_H
+#include <unistd.h>
 
-void	ft_print_alphabet(void);
+/* Displays the alphabet in lowercase, on a single line, by descending order, 
+/* starting from the letter 'z'.
+*/
 
-#endif
+void	ft_print_reverse_alphabet(void)
+{
+	char	letter;
+
+	letter = 'z';
+	while (letter >= 'a')
+	{
+		write(1, &letter, 1);
+		letter--;
+	}
+}
